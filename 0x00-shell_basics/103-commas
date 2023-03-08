@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1pF | sed -e 's/ /\\ /g' | tr '\n' ',' | sed 's/,$/\n/'
+ls -xamp
