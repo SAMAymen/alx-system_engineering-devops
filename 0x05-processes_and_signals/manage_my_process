@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# well well well
+# Indefinitely writes "I am alive" to the file /tmp/my_process.
 
 file="/tmp/my_process"
 
