@@ -3,7 +3,7 @@
 #include "unistd.h"
 
 /**
- * infinite_while - an  infinit while that runs forever
+ * infinite_while - infinite while loop that runs forever
  * Return: 0 in the end
 */
 int infinite_while(void)

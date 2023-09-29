@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# list processes
+# list all my currently running processes
 
-# source https://www.freecodecamp.org/news/linux-list-processes-how-to-check-running-processes/
+# source: https://www.freecodecamp.org/news/linux-list-processes-how-to-check-running-processes/
 ps -auxf
