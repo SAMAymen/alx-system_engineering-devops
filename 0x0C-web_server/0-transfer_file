@@ -15,3 +15,4 @@ if [ -z "$sshKey" ]; then
 else
   scp -o StrictHostKeyChecking=no -i "$sshKey" "$filePath" "$userName@$serverIp:~/"
 fi
+
