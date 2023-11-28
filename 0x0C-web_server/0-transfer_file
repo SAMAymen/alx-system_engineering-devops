@@ -10,7 +10,7 @@ serverIp=$2
 userName=$3
 sshKey=$4
 
-if [ -z "$ssh_key" ]; then
+if [ -z "$sshKey" ]; then
   scp -o StrictHostKeyChecking=no "$filePath" "$userName@$serverIp:~/"
 else
   scp -o StrictHostKeyChecking=no -i "$sshKey" "$filePath" "$userName@$serverIp:~/"
