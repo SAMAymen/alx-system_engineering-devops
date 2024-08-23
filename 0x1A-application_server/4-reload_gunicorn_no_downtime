@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Gracefully reloads Gunicorn.
 
-pgrep -f gunicorn | xargs kill -HUP
-echo "OK"
-
+pgrep -f 'gunicorn' | while read -r pid; do
+    if grep -q 'master' /proc/"$pid"/cmdline; then
+        kill -HUP "$pid"
+        break
+    fi
+done
